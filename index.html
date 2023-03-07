@@ -100,119 +100,146 @@
                 <span class="space-marker">━</span>
                 PLACES
             </h2>
+            <b class="places__where">Where do we go?</b>
+            <p class="places__ten_days">10 days of travel and 5 unique places in Norway are waiting for us. Read more about
+                each place from our
+                itinerary below.
+            </p>
+    
             <!-- menu city  route -->
-            <nav>
-                <a href="#oslo">Oslo</a>
-                <a href="#trondheim">Trondheim</a>
-                <a href="#bodo">Bodø</a>
-                <a href="#lofoten">Lofoten Islands</a>
-                <a href="#tromso">Tromsø</a>
+            <nav class="places__menu">
+                <a class="places__cyti" href="#trondheim">Trondheim</a>
+                <a class="places__cyti" href="#bodo">Bodø</a>
+                <a class="places__cyti" href="#lofoten">Lofoten Islands</a>
+                <a class="places__cyti" href="#tromso">Tromsø</a>
+                <a class="places__city" href="#oslo">Oslo</a>
             </nav>
-
-            <div id="oslo">
-                <img src="assets/images/plases-section/in-oslo.jpg" alt="Oslo">
+    
+            <div id="oslo" class="places__city_container">
+                <img class="places__photo" src="assets/images/plases-section/in-oslo.jpg" alt="Oslo">
                 <div>
-                    <p>Oslo - First point</p>
-                    <h3>The Capital and Largest City of Norway</h3>
-                    <p>
-                        <span class="nights">1 night </span>Scandic Hotel
-                    </p>
-                    <p>We start our journey from Oslo, the capital of Norway. On a walking tour, you will see the opera
+                    <p class="places__pointnumer">Oslo - First point</p>
+                    <h3 class="places__city_info">The Capital and Largest City of Norway</h3>
+                    <p class="places__city_hotel">
+                        <span class="nights">1 night </span> Scandic Hotel
+                    </p> <!-- ?? -->
+                    <p class="places__city_tourplan">
+                        We start our journey from Oslo, the capital of Norway. On a walking
+                        tour, you will see the opera
                         house, parliament, the
                         royal palace, and more.</p>
-                    <p><img width="24" src="assets/images/plases-section/in-spoonfok.svg" alt="spoon"> - Dinner included
-                    </p>
-                    <p><img width="24" src="assets/images/plases-section/in-backpack.svg" alt="backpack"> - Leave your
-                        backpack in the hotel
-                    </p>
-                    <p><img width="24" src="assets/images/plases-section/in-plane.svg" alt="plane"> - Transfer from the
-                        airport</p>
-                    <button form="booking">Book now</button>
+    
+                    <p class="service"><img class="service__icon" width="50"
+                            src="assets/images/plases-section/in-spoonfok.svg" alt="spoon">
+                        - Dinner included</p>
+                    <p class="service"><img class="service__icon" width="50"
+                            src="assets/images/plases-section/in-backpack.svg" alt="backpack">
+                        - Leave your backpack in the hotel</p>
+                    <p class="service"><img class="service__icon" width="50" src="assets/images/plases-section/in-plane.svg"
+                            alt="plane"> -
+                        Transfer from the airport</p>
+                    <button form="booking" class="butt_book">Book now</button> <!-- ?? -->
                 </div>
             </div>
-
-            <div id="trondheim">
-                <img src="assets/images/plases-section/in-trondheim.jpg" alt="Trondheim">
+    
+            <div id="trondheim" class="places__cyti_container">
+                <img class="places__photo" src="assets/images/plases-section/in-trondheim.jpg" alt="Trondheim">
                 <div>
-                    <p>Trondheim - Second point</p>
-                    <h3>The First Capital With the Royal Residence</h3>
-                    <p>
+                    <p class="places__pointnumer">Trondheim - Second point</p>
+                    <h3 class="places__city_info">The First Capital With the Royal Residence</h3>
+                    <p class="places__city_hotel">
                         <span class="nights">2 nights </span>Radisson Hotel
                     </p>
-                    <p>The main Christian landmark of Norway, the Nidaros Cathedral is located here. The architectural
+                    <p class="places__city_tourplan">The main Christian landmark of Norway, the Nidaros Cathedral is located
+                        here. The architectural
                         sign
                         of the new era is a
                         high TV tower with a revolving restaurant.</p>
-                    <p><img width="24" src="assets/images/plases-section/in-bus.svg" alt="bus"> - Arriving at 9 a.m.</p>
-                    <p><img width="24" src="assets/images/plases-section/in-camera.svg" alt="camera"> -
+                    <p class="service"><img class="service__icon" width="50" src="assets/images/plases-section/in-bus.svg"
+                            alt="bus"> - Arriving at 9 a.m.</p>
+                    <p class="service"><img class="service__icon" width="50"
+                            src="assets/images/plases-section/in-camera.svg" alt="camera"> -
                         Instagram-friendly places</p>
-                    <p><img width="24" src="assets/images/plases-section/in-road-sign.svg" alt="road-sign"> - 3-hours
+                    <p class="service"><img class="service__icon" width="50"
+                            src="assets/images/plases-section/in-road-sign.svg" alt="road-sign"> - 3-hours
                         walking tour</p>
                     <button>Book now</button>
                 </div>
             </div>
-            <div id="bodo">
-                <img src="assets/images/plases-section/in-bodo.jpg" alt="Bodø">
+            <div id="bodo" class="places__cyti_container">
+                <img class="places__photo" src="assets/images/plases-section/in-bodo.jpg" alt="Bodø">
                 <div>
-                    <p>Bodø - Third point</p>
-                    <h3>Unique Fishing Spot in Fascinating Scenery</h3>
-                    <p>
+                    <p class="places__pointnumer">Bodø - Third point</p>
+                    <h3 class="places__city_info">Unique Fishing Spot in Fascinating Scenery</h3>
+                    <p class="places__city_hotel">
                         <span class="nights">2 nights </span>Gronheim Guesthouse
                     </p>
-                    <p>We've left "urban" Norway, and Bodø is our first stop for no sightseeing. We will simply go
+                    <p class="places__city_tourplan">We've left "urban" Norway, and Bodø is our first stop for no
+                        sightseeing. We will simply go
                         fishing, enjoy the fresh
                         air, and try dishes with salmon and trout.</p>
-                    <p><img width="24" src="assets/images/plases-section/in-fishspot.svg" alt="bus"> - Fishing spots</p>
-                    <p><img width="24" src="assets/images/plases-section/in-spoonfok.svg" alt="camera"> - Fish dinner
+                    <p class="service"><img class="service__icon" width="50"
+                            src="assets/images/plases-section/in-fishspot.svg" alt="bus"> - Fishing spots</p>
+                    <p class="service"><img class="service__icon" width="50"
+                            src="assets/images/plases-section/in-spoonfok.svg" alt="camera"> - Fish dinner
                     </p>
-                    <p><img width="24" src="assets/images/plases-section/in-cablecar.svg" alt="cablecar"> - Cable car
+                    <p class="service"><img class="service__icon" width="50"
+                            src="assets/images/plases-section/in-cablecar.svg" alt="cablecar"> - Cable car
                         ride</p>
                     <button>Book now</button>
                 </div>
             </div>
-
-            <div id="lofoten">
-                <img src="assets/images/plases-section/in-lofonten.jpg" alt="Lofoten Islands">
+    
+            <div id="lofoten" class="places__cyti_container">
+                <img class="places__photo" src="assets/images/plases-section/in-lofonten.jpg" alt="Lofoten Islands">
                 <div>
-                    <p>Lofoten Islands - Fourth point</p>
-                    <h3>Stunning Place Beyond the Arctic circle</h3>
-                    <p>
+                    <p class="places__pointnumer"> Lofoten Islands - Fourth point</p>
+                    <h3 class="places__city_info">Stunning Place Beyond the Arctic circle</h3>
+                    <p class="places__city_hotel">
                         <span class="nights">2 nights </span>Cabinn Hotel
                     </p>
-                    <p>The islands are located in the harsh waters of the Norwegian Sea. It is a land of wild
+                    <p class="places__city_tourplan">The islands are located in the harsh waters of the Norwegian Sea. It is
+                        a land of wild
                         nature,
                         majestic mountains,
                         fjords, and long sandy beaches.</p>
-                    <p><img width="24" src="assets/images/plases-section/in-beach.svg" alt="beaches"> - beaches</p>
-                    <p><img width="24" src="assets/images/plases-section/in-liquor.svg" alt="liquor"> - Tasting of local
+                    <p class="service"><img class="service__icon" width="50" src="assets/images/plases-section/in-beach.svg"
+                            alt="beaches"> - beaches</p>
+                    <p class="service"><img class="service__icon" width="50"
+                            src="assets/images/plases-section/in-liquor.svg" alt="liquor"> - Tasting of local
                         liqueurs</p>
-                    <p><img width="24" src="assets/images/plases-section/in-boat.svg" alt="road-sign"> - Boat trip</p>
+                    <p class="service"><img class="service__icon" width="50" src="assets/images/plases-section/in-boat.svg"
+                            alt="road-sign"> - Boat trip</p>
                     <button>Book now</button>
                 </div>
             </div>
-
-            <div id="tromso">
-                <img src="assets/images/plases-section/in-tromso.jpg" alt="Tromsø">
+    
+            <div id="tromso" class="places__cyti_container">
+                <img class="places__photo" src="assets/images/plases-section/in-tromso.jpg" alt="Tromsø">
                 <div>
-                    <p>Tromsø - Final point</p>
-                    <h3>Spot for Hunting the Northern Lights</h3>
-                    <p>
+                    <p class="places__pointnumer">Tromsø - Final point</p>
+                    <h3 class="places__city_info">Spot for Hunting the Northern Lights</h3>
+                    <p class="places__city_hotel">
                         <span class="nights">3 nights </span>Scandic Hotel
                     </p>
-                    <p>The largest Norwegian city in the Arctic Circle is also called “Paris of the North”. The main
+                    <p class="places__city_tourplan">The largest Norwegian city in the Arctic Circle is also called “Paris
+                        of the North”. The main
                         attractions are the Polar
                         Museum and the Arctic Cathedral.</p>
-                    <p><img width="24" src="assets/images/plases-section/in-suitcase-suvenir.svg" alt="suitcase"> - Free
+                    <p class="service"><img class="service__icon" width="50"
+                            src="assets/images/plases-section/in-suitcase-suvenir.svg" alt="suitcase"> - Free
                         souvenirs</p>
-                    <p><img width="24" src="assets/images/plases-section/in-plane.svg" alt="liquor"> - International
+                    <p class="service"><img class="service__icon" width="50" src="assets/images/plases-section/in-plane.svg"
+                            alt="liquor"> - International
                         airport</p>
-                    <p><img width="24" src="assets/images/plases-section/in-northern-lights.svg" alt="road-sign"> -
+                    <p class="service"><img class="service__icon" width="50"
+                            src="assets/images/plases-section/in-northern-lights.svg" alt="road-sign"> -
                         Northern Lights</p>
                     <button>Book now</button>
                 </div>
             </div>
         </section>
-
+    
 
 
         <!--Oleg Kharyton, 7th block-->
