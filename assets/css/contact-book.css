@@ -5,15 +5,56 @@
     background-attachment: fixed;
 }
 
-.contact-book {
+/* .contact-book {
     max-width: 1200px;
     min-height: 960px;
     
-}
+} */
 
 .contact-book__forma {
-    width: 570px;
-    height: 698.77px;
-    background-color: black;
-    margin-top: 130px;
+    width: 500px;
+    height: 750px;
+    background-color: #000;
+    margin: 100px 0 100px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.contact-book__title {
+    color: var(--color-fonts-places);
+    margin-top: 70px;
+}
+
+.contact-book__journey {
+    margin-top: 18px;
+    font-size: 45px;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.contact-book__comlete {
+    margin-top: 26px;
+    margin-bottom: 24px;
+    font-size: 17px;
+    color: var(--color-fonts-places);
+    width: 400px;
+    height: 60px;
+}
+
+.contact-book__input {
+    margin-top: 24px;
+    width: 400px;
+    height: 60px;
+    background: #2D2E34;
+    color: var(--color-fonts-places);
+}
+
+.btn_book_send {
+    margin-top: 24px;
+    width: 400px;
+    height: 60px;
+    background: #14A9EE;
+    color: var(--color-fonts-places);
 }
