@@ -11,14 +11,6 @@
 </head>
 
 <body>
-
-    <!--Azhazha Dmytro-->
-    <!--Binkovskyi Yevhen-->
-    <!--Iryna Aksonova-->
-    <!--Ivanna Bakovych-->
-    <!-- Inga Borysova block 5 + 8 -->
-
-
     <header class="header">
         <!--Azhazha Dmytro, 1th block-->
         <div class="header__container">
@@ -99,6 +91,7 @@
 
         <!--Ivanna Bakovych, 4th block-->
         <section class="about-norway">
+            <h2 class="about-norway__title"><span class="space-marker">-</span> Norway</h2>
             <h2 class="about-norway__title"><span class="space-marker">-</span>About Norway</h2>
             <img src="assets/images/four-sections/card-about.png" alt="about norway">
             <p class="about-norway__introduction">Land of The Midnight Sun</p>
@@ -118,6 +111,11 @@
                 the
                 season from all over the world.
             </p>
+
+        </section>
+
+        <!-- Inga Borysova block PLACES and US CONTACTS-->
+        <section>
             <div class="about-norway__attractions attractions">
                 <div class="attractions__fjords">
                     <span class="attractions__number">7,000+</span>
@@ -137,7 +135,10 @@
                 </div>
             </div>
             <div class="about-norway-video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/TuOIW144_BY" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/TuOIW144_BY"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
             </div>
         </section>
 
@@ -153,27 +154,30 @@
             </p>
 
             <!-- menu city  route -->
-            <nav class="places__menu">
-                <a class="places__cyti" href="#trondheim">Trondheim</a>
-                <a class="places__cyti" href="#bodo">Bodø</a>
-                <a class="places__cyti" href="#lofoten">Lofoten Islands</a>
-                <a class="places__cyti" href="#tromso">Tromsø</a>
-                <a class="places__city" href="#oslo">Oslo</a>
-            </nav>
+
+            <div class="places__menu">
+                <a class="places__btn-city" href="#oslo">Oslo</a>
+                <a class="places__btn-city" href="#trondheim">Trondheim</a>
+                <a class="places__btn-city" href="#bodo">Bodø</a>
+                <a class="places__btn-city" href="#lofoten">Lofoten Islands</a>
+                <a class="places__btn-city" href="#tromso">Tromsø</a>
+            </div>
 
             <div id="oslo" class="places__city_container">
-                <img class="places__photo" src="assets/images/plases-section/in-oslo.jpg" alt="Oslo">
-                <div>
+                <img class="places__photo" src="assets/images/plases-section/in-oslo.png" alt="Oslo">
+                <div class="places__descript">
                     <p class="places__pointnumer">Oslo - First point</p>
                     <h3 class="places__city_info">The Capital and Largest City of Norway</h3>
-                    <p class="places__city_hotel">
-                        <span class="nights">1 night </span> Scandic Hotel
-                    </p> <!-- ?? -->
+                    <div class="places__city_hotel">
+                        <p class="nights">1 night</p>
+                        <p class="hotel">Scandic Hotel</p>
+                    </div>
                     <p class="places__city_tourplan">
                         We start our journey from Oslo, the capital of Norway. On a walking
                         tour, you will see the opera
                         house, parliament, the
-                        royal palace, and more.</p>
+                        royal palace, and more.
+                    </p>
 
                     <p class="service"><img class="service__icon" width="50"
                             src="assets/images/plases-section/in-spoonfok.svg" alt="spoon">
@@ -184,18 +188,19 @@
                     <p class="service"><img class="service__icon" width="50"
                             src="assets/images/plases-section/in-plane.svg" alt="plane"> -
                         Transfer from the airport</p>
-                    <button form="booking" class="butt_book">Book now</button> <!-- ?? -->
+                    <button form="booking" class="btn_book">Book now →</button>
                 </div>
             </div>
 
-            <div id="trondheim" class="places__cyti_container">
-                <img class="places__photo" src="assets/images/plases-section/in-trondheim.jpg" alt="Trondheim">
-                <div>
+            <div id="trondheim" class="places__city_container">
+                <img class="places__photo" src="assets/images/plases-section/in-trondheim.png" alt="Trondheim">
+                <div class="places__descript">
                     <p class="places__pointnumer">Trondheim - Second point</p>
                     <h3 class="places__city_info">The First Capital With the Royal Residence</h3>
-                    <p class="places__city_hotel">
-                        <span class="nights">2 nights </span>Radisson Hotel
-                    </p>
+                    <div class="places__city_hotel">
+                        <p class="nights">2 night</p>
+                        <p class="hotel">Radisson Hotel</p>
+                    </div>
                     <p class="places__city_tourplan">The main Christian landmark of Norway, the Nidaros Cathedral is
                         located
                         here. The architectural
@@ -210,17 +215,18 @@
                     <p class="service"><img class="service__icon" width="50"
                             src="assets/images/plases-section/in-road-sign.svg" alt="road-sign"> - 3-hours
                         walking tour</p>
-                    <button>Book now</button>
+                    <button form="booking" class="btn_book">Book now →</button>
                 </div>
             </div>
-            <div id="bodo" class="places__cyti_container">
-                <img class="places__photo" src="assets/images/plases-section/in-bodo.jpg" alt="Bodø">
-                <div>
+            <div id="bodo" class="places__city_container">
+                <img class="places__photo" src="assets/images/plases-section/in-bodo.png" alt="Bodø">
+                <div class="places__descript">
                     <p class="places__pointnumer">Bodø - Third point</p>
                     <h3 class="places__city_info">Unique Fishing Spot in Fascinating Scenery</h3>
-                    <p class="places__city_hotel">
-                        <span class="nights">2 nights </span>Gronheim Guesthouse
-                    </p>
+                    <div class="places__city_hotel">
+                        <p class="nights">2 night</p>
+                        <p class="hotel">Gronheim Guesthouse</p>
+                    </div>
                     <p class="places__city_tourplan">We've left "urban" Norway, and Bodø is our first stop for no
                         sightseeing. We will simply go
                         fishing, enjoy the fresh
@@ -233,18 +239,19 @@
                     <p class="service"><img class="service__icon" width="50"
                             src="assets/images/plases-section/in-cablecar.svg" alt="cablecar"> - Cable car
                         ride</p>
-                    <button>Book now</button>
+                    <button form="booking" class="btn_book">Book now →</button>
                 </div>
             </div>
 
-            <div id="lofoten" class="places__cyti_container">
-                <img class="places__photo" src="assets/images/plases-section/in-lofonten.jpg" alt="Lofoten Islands">
-                <div>
+            <div id="lofoten" class="places__city_container">
+                <img class="places__photo" src="assets/images/plases-section/in-lofoten.png" alt="Lofoten Islands">
+                <div class="places__descript">
                     <p class="places__pointnumer"> Lofoten Islands - Fourth point</p>
                     <h3 class="places__city_info">Stunning Place Beyond the Arctic circle</h3>
-                    <p class="places__city_hotel">
-                        <span class="nights">2 nights </span>Cabinn Hotel
-                    </p>
+                    <div class="places__city_hotel">
+                        <p class="nights">2 night</p>
+                        <p class="hotel">Cabinn Hotel</p>
+                    </div>
                     <p class="places__city_tourplan">The islands are located in the harsh waters of the Norwegian Sea.
                         It is
                         a land of wild
@@ -258,17 +265,18 @@
                         liqueurs</p>
                     <p class="service"><img class="service__icon" width="50"
                             src="assets/images/plases-section/in-boat.svg" alt="road-sign"> - Boat trip</p>
-                    <button>Book now</button>
+                    <button form="booking" class="btn_book">Book now →</button>
                 </div>
             </div>
-            <div id="tromso" class="places__cyti_container">
-                <img class="places__photo" src="assets/images/plases-section/in-tromso.jpg" alt="Tromsø">
-                <div>
+            <div id="tromso" class="places__city_container">
+                <img class="places__photo" src="assets/images/plases-section/in-tromso.png" alt="Tromsø">
+                <div class="places__descript">
                     <p class="places__pointnumer">Tromsø - Final point</p>
                     <h3 class="places__city_info">Spot for Hunting the Northern Lights</h3>
-                    <p class="places__city_hotel">
-                        <span class="nights">3 nights </span>Scandic Hotel
-                    </p>
+                    <div class="places__city_hotel">
+                        <p class="nights">3 night</p>
+                        <p class="hotel">Scandic Hotel</p>
+                    </div>
                     <p class="places__city_tourplan">The largest Norwegian city in the Arctic Circle is also called
                         “Paris
                         of the North”. The main
@@ -283,51 +291,58 @@
                     <p class="service"><img class="service__icon" width="50"
                             src="assets/images/plases-section/in-northern-lights.svg" alt="road-sign"> -
                         Northern Lights</p>
-                    <button>Book now</button>
+                    <button form="booking" class="btn_book">Book now →</button>
                 </div>
             </div>
         </section>
 
         <!--Binkovskyi Yevhen, 6th block-->
-        <div class="container">
-            <section class="gallery">
-                <h2 class="gallery__title gallery--crumbs">stunning spots</h2>
+        <section class="gallery">
+            <div class="container">
+                <h2 class="gallery__title">stunning spots</h2>
                 <div class="gallery__contain">
-                    <div class="gallery__subtitle">Beautiful Landscapes</div>
+                    <div class="gallery__subtitle">Beautiful<span>Landscapes</span></div>
                     <p class="gallery__text">
                         The beauty of Norway can hardly be overestimated. It has literally everything: glaciers, green
                         forests, beaches. Come
                         and see with your own eyes.
+                    </p>
                 </div>
-                <!-- </div> -->
                 <div class="gallery__slider">
                     <div class="gallery__item">
-                        <img width="370" src="assets/images/gallery-section/img-1.jpg" alt="Gallery Picture"
-                            class="gallery__img">
+                        <img class="gallery__img" width="370" src="assets/images/gallery-section/img-1.jpg"
+                            alt="Gallery Picture">
                     </div>
                     <div class="gallery__item">
-                        <img width="370" src="assets/images/gallery-section/img-2.jpg" alt="Gallery Picture"
-                            class="gallery__img">
+                        <img class="gallery__img" width="370" src="assets/images/gallery-section/img-2.jpg"
+                            alt="Gallery Picture">
                     </div>
                     <div class="gallery__item">
-                        <img width="370" src="assets/images/gallery-section/img-3.jpg" alt="Gallery Picture"
-                            class="gallery__img">
+                        <img class="gallery__img" width="370" src="assets/images/gallery-section/img-3.jpg"
+                            alt="Gallery Picture">
                     </div>
                 </div>
-                <div class="gallery__review">
-                    <span class="gallery__review_icon"></span>
-                    <p class="gallery__review_text">"Out in the fjord I dragged myself up at once, wet with fever and
-                        exhaustion, and gazed landwards, and bade farewell for
-                        the present to the town – to Christiania, where the windows gleamed so brightly in all the
-                        homes."
-                </div>
-                <span class="gallery__author">Knut Hamsun</span>
-        <!-- </div> -->
+            </div>
         </section>
-        </div>
 
+        <section class="gallery__review">
+            <div class="container">
+                <span class="gallery__review_icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" style="max-width:100%" height="40px">
+                        <path d="M23 14v15l-4.5 8H11l4.5-8H8V14h15zm19 0v15l-4.5 8H30l4.5-8H27V14h15z"
+                            fill="currentColor" fill-rule="evenodd" style=""></path>
+                    </svg>
+                </span>
+                <p class="gallery__review_text">"Out in the fjord I dragged myself up at once, wet with fever and
+                    exhaustion, and gazed landwards, and bade farewell for
+                    the present to the town – to Christiania, where the windows gleamed so brightly in all the homes."
+                </p>
+                <span class="gallery__review_author">Knut Hamsun</span>
+            </div>
+        </section>
 
         <!--Oleg Kharyton, 7th block-->
+        <div class="sections">
         <section class="faq">
             <div class="faq__content">
                 <div class="faq__text-side">
@@ -383,14 +398,16 @@
 
         <!-- Inga Borysova block US CONTACTS-->
         <section class="contact-book">
-            <img class="contact-book__backgr" src="./assets/images/eight-section/contactus-backgr.jpg" alt="photo-backgr">
-            <form id="booking">
+            <!-- <img class="contact-book__backgr" src="./assets/images/eight-section/contactus-backgr.jpg"
+                alt="photo-backgr"> -->
+            <form id="booking" class="contact-book__forma">
                 <h2 class="contact-book__title">
                     <span class="space-marker">━</span>
                     CONTACT US
                 </h2>
                 <h3 class="contact-book__journey">Book your journey!</h3>
-                <p class="contact-book__comlete">Complete the form below, and we will contact you soon to discuss the details!</p>
+                <p class="contact-book__comlete">Complete the form below, and we will contact you soon to discuss the
+                    details!</p>
                 <input type="text" value="Your Name" required>
                 <input type="tel" value="Your Phone" required>
                 <input type="email" value="Your Email" required>
@@ -398,6 +415,7 @@
                 <button>Request a quote</button>
             </form>
         </section>
+    </div>
 
         <!--Oleg Kharyton, 9th block-->
         <section class="testimonials">
@@ -410,7 +428,7 @@
                     <div class="slide">
                         <div class="testimonials__author">
                             <img src="assets/images/testimonials-section/author-photo.png" alt="Cole Tiers photo"
-                                 class="testimonials__photo">
+                                class="testimonials__photo">
                             <h4 class="testimonials__name">Cole Tiers</h4>
                         </div>
                         <div class="testimonials__text">
@@ -424,7 +442,7 @@
                     <div class="slide">
                         <div class="testimonials__author">
                             <img src="assets/images/testimonials-section/author-photo.png" alt="Cole Tiers photo"
-                                 class="testimonials__photo">
+                                class="testimonials__photo">
                             <h4 class="testimonials__name">Cole Tiers</h4>
                         </div>
                         <div class="testimonials__text">
@@ -438,7 +456,7 @@
                     <div class="slide">
                         <div class="testimonials__author">
                             <img src="assets/images/testimonials-section/author-photo.png" alt="Cole Tiers photo"
-                                 class="testimonials__photo">
+                                class="testimonials__photo">
                             <h4 class="testimonials__name">Cole Tiers</h4>
                         </div>
                         <div class="testimonials__text">
@@ -452,7 +470,7 @@
                 </div>
             </div>
         </section>
-
+        
     </main>
     <footer class="footer">
 

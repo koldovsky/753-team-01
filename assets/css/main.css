@@ -1,11 +1,16 @@
+@import "null.css";
 @import url(fonts.css);
 @import "faq-section.css";
+@import url(gallery.css);
+@import url(places.css);
+@import url(contact-book.css);
 
 body {
     font-family: 'Roboto', sans-serif;
 }
 
 :root {
+    --color-fonts-places: #505155;
     --light: #fff;
     --dark-main-bg: #232428;
     --shadowed: rgba(255, 255, 255, 0.3);
