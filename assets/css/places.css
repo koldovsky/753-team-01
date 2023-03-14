@@ -1,0 +1,103 @@
+
+.places {
+    color: var(--color-fonts-places);
+    margin-top: 60px;
+}
+
+.places__where {
+    margin-top: 30px;
+    font-size: 45px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.places__ten_days {
+    width: 770px;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.places__menu {
+    margin-top: 50px;
+    font-size: 14px;
+    margin-bottom: 30px;
+    /* text-decoration: none; */
+    /* color: #9f2323; */
+}
+
+.places__city_container {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.places__btn-city {
+    margin-right: 7px;
+    background-color: #fff;
+    color: var(--color-fonts-places);
+    font-weight: bold;
+    height: 52px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.places__photo {
+    width: 40%;
+    /* height: 500px; */
+    margin-right: 20px;
+}
+
+.places__descript {
+    margin-left: 70px;
+
+}
+
+.places__pointnumer {
+    margin-top: 60px;
+    font-size: 14px;
+}
+
+.places__city_info {
+    margin-top: 20px;
+    width: 395px;
+    height: 96px;
+    font-size: 36px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.places__city_hotel {
+    margin: 24px 0 30px 0;
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+}
+
+.nights {
+    color: #ab2020;
+    font-size: 19px;
+
+}
+
+.hotel {
+    margin-left: 135px;
+    font-size: 15px;
+}
+
+.places__city_tourplan {
+    width: 430px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.service {
+    font-size: 15px;
+}
+
+.btn_book {
+    background-color: #14A9EE;
+    color: #fff;
+    width: 132px;
+    height: 42px
+}

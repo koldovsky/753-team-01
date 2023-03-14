@@ -1,0 +1,19 @@
+.sections {
+    background-image: url(../images/eight-section/contactus-backgr.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.contact-book {
+    max-width: 1200px;
+    min-height: 960px;
+    
+}
+
+.contact-book__forma {
+    width: 570px;
+    height: 698.77px;
+    background-color: black;
+    margin-top: 130px;
+}
