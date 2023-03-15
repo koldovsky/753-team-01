@@ -65,6 +65,8 @@ ul li {
 
 img {
     vertical-align: top;
+    display: block;
+    width: 100%;
 }
 
 h1,

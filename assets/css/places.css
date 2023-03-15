@@ -1,103 +1,111 @@
-
 .places {
+    width: 320px;
     color: var(--color-fonts-places);
     margin-top: 60px;
+    display: block;
+    align-items: center;
 }
 
 .places__where {
     margin-top: 30px;
-    font-size: 45px;
+    font-size: 30px;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
 }
 
 .places__ten_days {
-    width: 770px;
     margin-top: 30px;
     font-size: 20px;
 }
 
 .places__menu {
-    margin-top: 50px;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
     font-size: 14px;
-    margin-bottom: 30px;
-    /* text-decoration: none; */
-    /* color: #9f2323; */
+    margin-bottom: 5px;
 }
 
 .places__city_container {
-    margin-top: 30px;
+    margin-top: 5px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .places__btn-city {
-    margin-right: 7px;
     background-color: #fff;
     color: var(--color-fonts-places);
     font-weight: bold;
     height: 52px;
     border: none;
     font-size: 20px;
-    cursor: pointer;
 }
 
 .places__photo {
-    width: 40%;
-    /* height: 500px; */
-    margin-right: 20px;
+    width: 320px;
+    align-items: center;
 }
 
 .places__descript {
-    margin-left: 70px;
-
+    text-align: center;
 }
 
 .places__pointnumer {
-    margin-top: 60px;
+    margin-top: 15px;
     font-size: 14px;
 }
 
 .places__city_info {
-    margin-top: 20px;
-    width: 395px;
-    height: 96px;
-    font-size: 36px;
+    width: 300px;
+    margin-top: 10px;
+    font-size: 30px;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
 }
 
 .places__city_hotel {
-    margin: 24px 0 30px 0;
-    display: flex;
-    flex-direction: row;
+    margin-top: 10px;
+    align-items: center;
     font-weight: bold;
 }
 
-.nights {
-    color: #ab2020;
-    font-size: 19px;
+.places__city_hotel p {
+    display: inline-block;
+}
 
+.nights {
+    color: var(--accent-color);
+    font-size: 19px;
 }
 
 .hotel {
-    margin-left: 135px;
+    margin-left: 20px;
     font-size: 15px;
 }
 
 .places__city_tourplan {
-    width: 430px;
+    width: 300px;
     font-size: 18px;
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 
 .service {
-    font-size: 15px;
+    display: flex;
+    align-items: center;
+
+}
+
+.service__icon {
+    width: 50px;
+    margin-right: 10px;
+
 }
 
 .btn_book {
-    background-color: #14A9EE;
-    color: #fff;
+    align-items: center;
+    background-color: var(--button-color);
+    color: var(--light);
     width: 132px;
     height: 42px
 }
