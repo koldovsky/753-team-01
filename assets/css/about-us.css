@@ -4,9 +4,34 @@
     font-weight: 700;
 }
 
+.about-us__description {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-right: 35px;
+    margin-left: 30px;
+    text-align: left;
+}
+
+@media (min-width: 770px) {
+    .about-us__description {
+        display: grid;
+        grid-template-columns: 50% 50% 50%;
+        grid-row-start: 1;
+        grid-row-end:   3;
+    }
+
+    .about-us__text {
+        padding-top: 80px;
+    }
+}
+
 .about-us__title {
+    color: var(--block-title-color);
+    font-family: var(--main-font);
     font-size: 12px;
     font-weight: 500;
+    letter-spacing: 0.36px;
     padding: 90px 0 20px;
     text-transform: uppercase;
 }
@@ -14,11 +39,9 @@
 .about-us__statement {
     color: var(--color-fonts-places);
     font-family: var(--block-title-font);
-    font-size: 34px;
+    font-size: calc(34px + 1vw);
+    line-height: calc(40px + 1vw);
     font-weight: 700;
-    line-height: 41px;
-    padding-left: 15px;
-    padding-right: 15px;
 }
 
 .about-us__text {
@@ -30,6 +53,10 @@
     margin-top: 50px;
     padding-left: 15px;
     padding-right: 15px;
+}
+
+.about-us__guided-tour {
+    padding-bottom: 20px;
 }
 
 .about-us__days {
