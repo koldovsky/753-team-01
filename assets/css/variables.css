@@ -1,4 +1,5 @@
 :root {
+    font-family: 'Roboto', sans-serif;
     --accent-color: #d71212;
     --button-color: #14A9EE;
     --border-color-input: #f7f7f7;
@@ -6,5 +7,10 @@
     --color-light: #fff;
     --color-dark-main-bg: #232428;
     --color-dark-input: #252424;
+    --block-title-color: #6F7380;
     --color-shadowed: rgba(255, 255, 255, 0.3);
+    --accent-text-color: #14A9EE;
+    --main-font: 'Roboto', sans-serif;
+    --block-title-font: 'Playfair', serif;
+    scroll-behavior: smooth;
 }
