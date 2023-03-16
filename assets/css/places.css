@@ -33,7 +33,7 @@
 }
 
 .places__btn-city {
-    background-color: #fff;
+    background-color: var(--color-light);
     color: var(--color-fonts-places);
     font-weight: bold;
     height: 52px;
@@ -103,9 +103,10 @@
 }
 
 .btn_book {
-    align-items: center;
+    /* align-items: center; */
     background-color: var(--button-color);
-    color: var(--light);
+    font-weight: bold;
+    color: #fff;
     width: 132px;
     height: 42px
 }
