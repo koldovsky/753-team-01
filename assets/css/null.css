@@ -64,6 +64,8 @@ ul li {
 }
 
 img {
+    display: block;
+    width: 100%;
     vertical-align: top;
 }
 
