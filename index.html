@@ -37,7 +37,7 @@
     </header>
     <main class="main">
 
-        <!--Iryna Aksonova, 2nd block-->
+        Iryna Aksonova, 2nd block
         <section class="about-us">
             <h2 class="about-us__title"><span class="dash">-</span>About Us</h2>
             <p class="about-us__sub-title">
@@ -143,8 +143,8 @@
         </section>
 
         <!-- Inga Borysova block PLACES -->
-        <section class="places container">
-            <h2 class="places__title">
+        <section class="places container" id="itinerary">
+            <h2 class="section-title">
                 <span class="space-marker">━</span>
                 PLACES
             </h2>
@@ -180,12 +180,12 @@
 
                     <div class="service">
                         <img class="service__icon" src="assets/images/plases-section/in-spoonfok.svg" alt="spoon">
-                        <p>Dinner included</p>
+                        <p>- Dinner included</p>
                     </div>
-                    <p class="service"><img class="service__icon" width="50"
+                    <p class="service"><img class="service__icon" 
                             src="assets/images/plases-section/in-backpack.svg" alt="backpack">
                         - Leave your backpack in the hotel</p>
-                    <p class="service"><img class="service__icon" width="50"
+                    <p class="service"><img class="service__icon" 
                             src="assets/images/plases-section/in-plane.svg" alt="plane"> -
                         Transfer from the airport</p>
                     <button form="booking" class="btn_book">Book now →</button>
@@ -207,12 +207,12 @@
                         sign
                         of the new era is a
                         high TV tower with a revolving restaurant.</p>
-                    <p class="service"><img class="service__icon" width="50"
+                    <p class="service"><img class="service__icon" 
                             src="assets/images/plases-section/in-bus.svg" alt="bus"> - Arriving at 9 a.m.</p>
-                    <p class="service"><img class="service__icon" width="50"
+                    <p class="service"><img class="service__icon" 
                             src="assets/images/plases-section/in-camera.svg" alt="camera"> -
                         Instagram-friendly places</p>
-                    <p class="service"><img class="service__icon" width="50"
+                    <p class="service"><img class="service__icon" 
                             src="assets/images/plases-section/in-road-sign.svg" alt="road-sign"> - 3-hours
                         walking tour</p>
                     <button form="booking" class="btn_book">Book now →</button>
@@ -231,12 +231,12 @@
                         sightseeing. We will simply go
                         fishing, enjoy the fresh
                         air, and try dishes with salmon and trout.</p>
-                    <p class="service"><img class="service__icon" width="50"
+                    <p class="service"><img class="service__icon" 
                             src="assets/images/plases-section/in-fishspot.svg" alt="bus"> - Fishing spots</p>
-                    <p class="service"><img class="service__icon" width="50"
+                    <p class="service"><img class="service__icon" 
                             src="assets/images/plases-section/in-spoonfok.svg" alt="camera"> - Fish dinner
                     </p>
-                    <p class="service"><img class="service__icon" width="50"
+                    <p class="service"><img class="service__icon" 
                             src="assets/images/plases-section/in-cablecar.svg" alt="cablecar"> - Cable car
                         ride</p>
                     <button form="booking" class="btn_book">Book now →</button>
@@ -258,12 +258,12 @@
                         nature,
                         majestic mountains,
                         fjords, and long sandy beaches.</p>
-                    <p class="service"><img class="service__icon" width="50"
+                    <p class="service"><img class="service__icon" 
                             src="assets/images/plases-section/in-beach.svg" alt="beaches"> - beaches</p>
-                    <p class="service"><img class="service__icon" width="50"
+                    <p class="service"><img class="service__icon" 
                             src="assets/images/plases-section/in-liquor.svg" alt="liquor"> - Tasting of local
                         liqueurs</p>
-                    <p class="service"><img class="service__icon" width="50"
+                    <p class="service"><img class="service__icon" 
                             src="assets/images/plases-section/in-boat.svg" alt="road-sign"> - Boat trip</p>
                     <button form="booking" class="btn_book">Book now →</button>
                 </div>
@@ -282,13 +282,13 @@
                         of the North”. The main
                         attractions are the Polar
                         Museum and the Arctic Cathedral.</p>
-                    <p class="service"><img class="service__icon" width="50"
+                    <p class="service"><img class="service__icon" 
                             src="assets/images/plases-section/in-suitcase-suvenir.svg" alt="suitcase"> - Free
                         souvenirs</p>
-                    <p class="service"><img class="service__icon" width="50"
+                    <p class="service"><img class="service__icon" 
                             src="assets/images/plases-section/in-plane.svg" alt="liquor"> - International
                         airport</p>
-                    <p class="service"><img class="service__icon" width="50"
+                    <p class="service"><img class="service__icon" 
                             src="assets/images/plases-section/in-northern-lights.svg" alt="road-sign"> -
                         Northern Lights</p>
                     <button form="booking" class="btn_book">Book now →</button>
@@ -401,7 +401,7 @@
         <section class="contact-book">
             <div class="forma_container">
                 <form id="booking" class="contact-book__forma">
-                    <h2 class="contact-book__title">
+                    <h2 class="section-title">
                         <span class="space-marker">━</span>
                         CONTACT US
                     </h2>
@@ -412,9 +412,19 @@
                     <input class="contact-book__input" type="tel" value="Your Phone" required>
                     <input class="contact-book__input" type="email" value="Your Email" required>
                     <input class="contact-book__input" type="date" required>
-                    <button class="btn_book_send">Request a quote</button>
+                    <button class="btn_book_send" id="launch-btn">Request a quote</button>
                 </form>
             </div>
+            <!--   modal form. need java to run          
+            <div>
+                <div class="modal__answer">
+                    <button class="close-btn">x</button>
+                    <img class="modal__mark" src="../assets/images/eight-section/m.svg" alt="v">
+                    <h4 class="modal__thank">Thank you!</h4>
+                    <p class="modal__descr">We will contact you shortly.</p>
+                    <button class="btn_ok">ok</button>
+                </div>
+            </div> -->
         </section>
 
 

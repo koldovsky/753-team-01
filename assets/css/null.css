@@ -66,10 +66,8 @@ ul li {
 img {
     display: block;
     width: 100%;
-    vertical-align: top;
-    display: block;
-    width: 100%;
-}
+    /* vertical-align: top; */
+    }
 
 h1,
 h2,
@@ -79,4 +77,14 @@ h5,
 h6 {
     font-weight: inherit;
     font-size: inherit;
+}
+
+.section-title {
+    margin-bottom: 15px;
+    font-size: 12px;
+    color: var(--color-fonts-places);
+}
+
+.space-marker {
+    color: var(--accent-color);
 }
