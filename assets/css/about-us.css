@@ -1,0 +1,37 @@
+.dash {
+    color: var(--accent-color);
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.about-us__title {
+    font-size: 12px;
+    font-weight: 500;
+    padding: 90px 0 20px;
+    text-transform: uppercase;
+}
+
+.about-us__statement {
+    color: var(--color-fonts-places);
+    font-family: var(--block-title-font);
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 41px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.about-us__text {
+    color: var(--color-fonts-places);
+    font-family: var(--main-font);
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 32px;
+    margin-top: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.about-us__days {
+    color: var(--accent-text-color);
+}
