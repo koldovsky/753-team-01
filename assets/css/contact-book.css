@@ -1,19 +1,64 @@
-.sections {
+.contact-book {
+    width: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-image: url(../images/eight-section/contactus-backgr.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding: 50px 0 50px 10px;
 }
 
-.contact-book {
-    max-width: 1200px;
-    min-height: 960px;
-    
+.forma_container {
+    background-color: #000;
+    width: 300px;
 }
 
 .contact-book__forma {
-    width: 570px;
-    height: 698.77px;
-    background-color: black;
-    margin-top: 130px;
+    width: 300px;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.contact-book__title {
+    color: var(--color-fonts-places);
+    margin-top: 70px;
+}
+
+.contact-book__journey {
+    margin-top: 18px;
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.contact-book__text {
+    margin-top: 26px;
+    margin-bottom: 24px;
+    font-size: 17px;
+    color: var(--color-fonts-places);
+    width: 200px;
+    height: 60px;
+}
+
+.contact-book__input {
+    margin-top: 24px;
+    width: 200px;
+    height: 40px;
+    background: var(--dark-main-bg);
+    color: var(--color-fonts-places);
+}
+
+.btn_book_send {
+    margin-top: 24px;
+    width: 200px;
+    height: 40px;
+    background: #14A9EE;
+    font-weight: bold;
+    color: #fff;
 }
