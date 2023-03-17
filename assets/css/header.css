@@ -1,16 +1,42 @@
 .header {
     background-image: url(../images/first-section/norway-bg.png);
     background-repeat: no-repeat;
+    font-family: 'Roboto', sans-serif;
 }
 
 .header__logo {
-    font-size: 16px;
+    font-size: 1rem;
 }
 
-.header__title {
-    font-size: 12px;
+.header__title, 
+.header__text-price, 
+.header__promo-video
+{
+    font-size: 0.75rem;
+    color: var(--color-text-header);
+}
+
+.header__text-trip {
+    font-size: 1.0625rem;
+    color: var(--color-text-header);
+}
+.header__text-days {
+    font-size: 0.75rem;
+    color: var(--color-shadowed-header);
 }
 
 .header__topic {
-    font-size: 70px;
+    font-size: 4.375rem;
+    color: var(--color-text-header);
+}
+
+.header__text {
+    font-size: 1.0625rem;
+    color: var(--color-text-header);
+}
+
+.header__read-more {
+    font-size: 0.875rem;
+    padding-right: 32px;
+    color: var(--color-text-header);
 }
