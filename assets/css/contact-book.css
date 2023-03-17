@@ -1,8 +1,7 @@
 .contact-book {
     height: 100%;
     display: flex;
-        align-items: center;
-    /* justify-content: flex-start;    */
+    align-items: center;
     background-image: url(../images/eight-section/contactus-backgr.jpg);
     background-size: cover;
     background-position: center;
@@ -111,4 +110,3 @@
     font-weight: bold;
     color: var(--color-light);
 }
-
