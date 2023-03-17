@@ -1,7 +1,7 @@
 .places {
-    width: 320px;
     color: var(--color-fonts-places);
     margin-top: 60px;
+    padding: 0;
     display: block;
     align-items: center;
 }
@@ -42,8 +42,8 @@
 }
 
 .places__photo {
-    width: 320px;
     align-items: center;
+    width: 100%;
 }
 
 .places__descript {
@@ -56,7 +56,6 @@
 }
 
 .places__city_info {
-    width: 300px;
     margin-top: 10px;
     font-size: 30px;
     font-family: 'Times New Roman', Times, serif;
@@ -84,7 +83,6 @@
 }
 
 .places__city_tourplan {
-    width: 300px;
     font-size: 18px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -103,10 +101,50 @@
 }
 
 .btn_book {
-    /* align-items: center; */
     background-color: var(--button-color);
     font-weight: bold;
     color: #fff;
     width: 132px;
     height: 42px
+}
+
+@media (min-width: 900px) {
+    .places {
+        padding-left: 3%;
+    }
+
+    .places__ten_days {
+        width: 70%;
+    }
+
+    .places__city_container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .places__menu {
+        width: 50%;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0;
+        margin: 0;
+
+    }
+
+    .places__btn-city {
+        margin-right: 2%;
+    }
+
+    .btn_book {
+        position: absolute;
+
+        bottom: 10px;
+        left: 10px;
+
+    }
+
+    .places__descript {
+        position: relative;
+    }
+
 }
