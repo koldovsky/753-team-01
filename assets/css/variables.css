@@ -11,6 +11,8 @@
     --color-dark-input: #252424;
     --block-title-color: #6F7380;
     --color-shadowed: rgba(255, 255, 255, 0.3);
+    --color-shadowed-header: rgba(255, 255, 255, 0.75);
+    --color-text-header:  rgb(255, 255, 255);
     --accent-text-color: #14A9EE;
     --main-font: 'Roboto', sans-serif;
     --block-title-font: 'Playfair', serif;
