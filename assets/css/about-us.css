@@ -6,24 +6,25 @@
 
 .about-us__description {
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
+    flex-direction: column;
+    font-size: calc(34px + 0.3vw);
+    line-height: calc(40px + 1vw);
     max-width: 1200px;
-    min-width: 320px;
-    padding: 130px 20px 40px;
-    margin-left: 25px;
+    padding: 130px 0 40px;
+    margin-left: 15px;
     text-align: left;
 }
 
-@media (min-width:990px) {
+@media (min-width: 990px) {
     .about-us__description {
         display: grid;
+        font-size: calc(34px + 1.1vw);
         grid-template-columns: 50% 50% 50%;
         grid-row-start: 1;
         grid-row-end:   3;
         padding: 130px 20px 40px;
         margin: 0 auto;
-        vertical-align: baseline;
     }
 }
 
@@ -52,8 +53,6 @@
 .about-us__statement {
     color: var(--color-fonts-places);
     font-family: var(--block-title-font);
-    font-size: calc(34px + 1.2vw);
-    line-height: calc(40px + 1vw);
     font-weight: 700;
     padding: 0 15px;
 }
@@ -75,18 +74,17 @@
     color: var(--accent-text-color);
 }
 
-.about-us__container {
+.about-us__cards-container {
     background-image: url(../images/first-section/about-us-background.jpg);
     background-repeat: no-repeat;
-    padding: 90px 0 400px;
-    background-position: center center;
+    background-position: 100%;
     background-size: cover;
+    padding-top: 90px;
+    padding-bottom: 400px;
 }
 
 .about-us__cards {
     display: flex;
-    max-width: 1200px;
-    min-width: 320px;
     padding: 130px 20px 40px;
     margin: 0 auto;
 }
