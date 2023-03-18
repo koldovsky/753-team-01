@@ -91,26 +91,24 @@
 .service {
     display: flex;
     align-items: center;
-
 }
 
 .service__icon {
     width: 50px;
     margin-right: 10px;
-
 }
 
 .btn_book {
     background-color: var(--button-color);
     font-weight: bold;
-    color: #fff;
+    color: var(--color-light);
     width: 132px;
     height: 42px
 }
 
 @media (min-width: 900px) {
     .places {
-        padding-left: 3%;
+        padding-left: 5%;
     }
 
     .places__ten_days {
