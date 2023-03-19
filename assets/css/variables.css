@@ -16,6 +16,8 @@
     --accent-text-color: #14A9EE;
     --main-font: 'Roboto', sans-serif;
     --block-title-font: 'Playfair', serif;
+    --bgr-color-blog: rgb(19, 18, 18, 0.5);
+    --border-color-blog: rgb(241, 237, 237);
 
     scroll-behavior: smooth;
 }

@@ -24,6 +24,11 @@
     flex-direction: column;
     font-size: 14px;
     margin-bottom: 5px;
+    border-bottom: 2px solid transparent;
+}
+
+.places__menu a.active-btn {
+    border-bottom: 2px solid var(--accent-color);
 }
 
 .places__city_container {
@@ -53,17 +58,18 @@
 .places__pointnumer {
     margin-top: 15px;
     font-size: 14px;
+    font-weight: 600;
 }
 
 .places__city_info {
-    margin-top: 10px;
-    font-size: 30px;
+    margin-top: 15px;
+    font-size: 40px;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
 }
 
 .places__city_hotel {
-    margin-top: 10px;
+    margin-top: 20px;
     align-items: center;
     font-weight: bold;
 }
@@ -83,9 +89,10 @@
 }
 
 .places__city_tourplan {
-    font-size: 18px;
-    margin-top: 20px;
+    font-size: 24px;
+    margin-top: 15px;
     margin-bottom: 20px;
+    line-height: 1.4;
 }
 
 .service {
@@ -113,12 +120,15 @@
 
     .places__ten_days {
         width: 70%;
+        margin-bottom: 15px;
     }
 
     .places__city_container {
         display: grid;
         grid-template-columns: 50% 50%;
+        padding-top: 5%;
     }
+
 
     .places__menu {
         width: 50%;
@@ -140,6 +150,8 @@
 
     .places__descript {
         position: relative;
+        margin-left: 10%;
+        text-align: left;
     }
 
 }

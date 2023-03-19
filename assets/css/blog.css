@@ -1,0 +1,93 @@
+.blog {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 120px;
+    color: var(--color-fonts-places);
+    text-align: center;
+}
+
+.blog__stories {
+    margin-top: 17px;
+    font-size: 45px;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.blog__stories_write {
+    margin-top: 25px;
+    font-size: 18px;
+}
+
+.blog__stories_text {
+    margin: 25px;
+    height: 500px;
+    border: 1px solid var(--border-color-blog);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog__stories_font {
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+}
+
+.contacts {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../images/blog/blue-montan.png);
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 50px 50px 50px;
+
+}
+
+
+.contact__contact-us {
+    margin-top: 10px;
+    background-color: var(--bgr-color-blog);
+    color: var(--color-light);
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.contact__contact_img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.contact__contact_text {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.contact__contact_info {
+    font-size: 15px;
+}
+
+@media (min-width: 768px) {
+    .contacts {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-flow: column;
+        gap: 10px;
+        align-items: center;
+    }
+    .contact__contact-us {
+        padding: inherit;
+    }
+
+    .blog__stories_text {
+        width: 70%;
+    }
+}
