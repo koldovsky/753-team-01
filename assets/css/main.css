@@ -1,10 +1,11 @@
 @import url(null.css);
 @import url(common.css);
 @import url(variables.css);
-@import url(faq.css);
 @import url(header.css);
 @import url(gallery.css);
 @import url(places.css);
+@import url(faq.css);
 @import url(contact-book.css);
+@import url(testimonials.css);
 @import url(about-us.css);
 @import url(blog.css);

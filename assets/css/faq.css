@@ -5,6 +5,7 @@
 .faq__container {
     max-width: 1200px;
     margin: 0 auto;
+    padding-bottom: 130px;
 }
 
 .faq__content {
@@ -36,7 +37,7 @@
 
 .faq__title {
     font-family: 'Playfair Display', serif;
-    font-size: var(--font-faq-title);
+    font-size: var(--font-adaptive-title);
     line-height: 1.2;
     color: var(--color-light);
     padding-bottom: 43px;
@@ -47,7 +48,7 @@
 }
 
 .faq__description {
-    font-size: var(--font-faq-description);
+    font-size: var(--font-adaptive-subtext);
     line-height: 1.5;
     color: var(--color-shadowed);
     padding-bottom: 25px;
@@ -76,14 +77,14 @@
 }
 
 .accordion__title {
-    font-size: var(--font-faq-description);
+    font-size: var(--font-adaptive-subtext);
     line-height: 1.2;
     color: var(--color-light);
     padding: 12px 0;
 }
 
 .accordion__text {
-    font-size: var(--font-faq-description);
+    font-size: var(--font-adaptive-subtext);
     line-height: 1.2;
     color: var(--color-shadowed);
 }
