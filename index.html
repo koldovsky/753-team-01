@@ -144,7 +144,7 @@
                 </div>
             </div>
             <div class="about-norway-video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/TuOIW144_BY"
+                <iframe width="360" height="315" src="https://www.youtube.com/embed/TuOIW144_BY"
                     title="YouTube video player"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen></iframe>
@@ -161,14 +161,15 @@
             <p class="places__ten_days">10 days of travel and 5 unique places in Norway are waiting for us. Read more
                 about each place from our itinerary below.
             </p>
-            <div class="places__menu">
-                <a class="places__btn-city" href="#oslo">Oslo</a>
-                <a class="places__btn-city" href="#trondheim">Trondheim</a>
-                <a class="places__btn-city" href="#bodo">Bodø</a>
-                <a class="places__btn-city" href="#lofoten">Lofoten Islands</a>
-                <a class="places__btn-city" href="#tromso">Tromsø</a>
+            <div class="places__menu-container">
+                <div class="places__menu">
+                    <a class="places__btn-city active-btn" href="#oslo">Oslo</a>
+                    <a class="places__btn-city" href="#trondheim">Trondheim</a>
+                    <a class="places__btn-city" href="#bodo">Bodø</a>
+                    <a class="places__btn-city" href="#lofoten">Lofoten Islands</a>
+                    <a class="places__btn-city" href="#tromso">Tromsø</a>
+                </div>
             </div>
-
             <div id="oslo" class="places__city_container">
                 <div class="places__photo">
                     <img src="assets/images/plases-section/in-oslo.png" alt="Oslo">
@@ -431,17 +432,17 @@
                     <button class="btn_book_send" id="launch-btn">Request a quote</button>
                 </form>
             </div>
-              <!-- modal form. need java to run           -->
-            <div>
+            <!-- modal form. need java to run           -->
+            <!-- <div>
                 <div class="modal__answer">
                     <button class="close-btn">x</button>
                     <img class="modal__mark" src="assets/images/eight-section/marker.svg" alt="v">
-                    
+
                     <h4 class="modal__thank">Thank you!</h4>
                     <p class="modal__descr">We will contact you shortly.</p>
                     <button class="btn_ok">ok</button>
                 </div>
-            </div>
+            </div> -->
         </section>
 
 
@@ -507,6 +508,45 @@
                 </div>
             </div>
         </section>
+
+        <section class="blog">
+            <div class="blog__header">
+                <h2 class="section-title">
+                    <span class="space-marker">━</span>
+                    BLOG
+                </h2>
+                <p class="blog__stories">Our Latest Stories</p>
+                <p class="blog__stories_write">Start preparing for your trip to Norway with our blog.
+                    We write about the most unusual places in this
+                    country and share life hacks.</p>
+            </div>
+            <div class="blog__stories_text">
+                <p class="blog__stories_font">No blog posts yet...</p>
+            </div>
+        </section>
+
+        <section class="contacts">
+            <!-- <div class="contact__container"> -->
+                <div class="contact__contact-us">
+                    <img class="contact__contact_img" src="./assets/images/blog/post.png" alt="email">
+                    <p class="contact__contact_text">Write Us</p>
+                    <a class="contact__contact_info" href="mailto:norway-tour@email.com">norway-tour@email.com</a>
+                </div>
+                <div class="contact__contact-us">
+                    <img class="contact__contact_img" src="./assets/images/blog/address.png" alt="point">
+                    <p class="contact__contact_text">Visit Us</p>
+                    <a class="contact__contact_info"
+                        href="https://www.google.com/maps/place/Tollbugata+15C,+0152+Oslo,+%D0%9D%D0%BE%D1%80%D0%B2%D0%B5%D2%91%D1%96%D1%8F/@59.9103398,10.7450172,17z/data=!3m1!4b1!4m6!3m5!1s0x46416e884dbbe9e1:0x76a88e56f2fc6d95!8m2!3d59.9103398!4d10.7450172!16s%2Fg%2F11c1zslxs2">Tollbugata
+                        15C, 0152 Oslo</a>
+                </div>
+                <div class="contact__contact-us">
+                    <img class="contact__contact_img" src="./assets/images/blog/call.png" alt="phone">
+                    <p class="contact__contact_text">Call Us</p>
+                    <a class="contact__contact_info" href="tel:+12345678900">+1 (234) 567 89 00</a>
+                </div>
+            <!-- </div> -->
+        </section>
+
     </main>
     <footer class="footer">
 
