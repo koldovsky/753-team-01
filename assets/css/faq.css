@@ -1,23 +1,46 @@
 .faq {
-    background: var(--dark-main-bg);
+    background: var(--color-dark-main-bg);
+}
+
+.faq__container {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .faq__content {
     display: flex;
+    flex: 1 1 50%;
+    padding: 10px;
+}
+
+@media screen and (min-width: 320px){
+    .faq__content {
+        flex-wrap: wrap;
+    }
 }
 
 .faq__text-side {
+    max-width: 570px;
+}
+
+@media screen and (min-width: 547px){
+    .faq__text-side {
+        flex-basis: 50%;
+    }
 }
 
 .faq__sign {
     color: var(--color-shadowed);
+    padding-bottom: 20px;
 }
 
 .faq__title {
     font-family: 'Playfair Display', serif;
-    font-size: 45px;
-    line-height: 54px;
+    /*font-size: 45px;*/
+    font-size: calc(30px + (45 - 30)*(100vw - 320px)/(1200 - 320));
+    line-height: 1.2;
     color: var(--color-light);
+    padding-bottom: 43px;
 }
 
 .faq__title_shadowed{
@@ -25,9 +48,11 @@
 }
 
 .faq__description {
-    font-size: 19px;
-    line-height: 32px;
+    /*font-size: 19px;*/
+    font-size: calc(16px + (19  - 16)*(100vw - 320px)/(1200 - 320));
+    line-height: 1.5;
     color: var(--color-shadowed);
+    padding-bottom: 25px;
 }
 
 .faq__accordion {
@@ -36,22 +61,44 @@
 .accordion {
 }
 
-.accordion__item {
+.accordion__item .accordion__title {
+    transition: margin 150ms ease-out;
+}
+
+.accordion__item[open] .accordion__title {
+    margin-bottom: 10px;
+}
+
+.accordion__item summary::-webkit-details-marker,
+.accordion__item summary::marker {
+    display: none;
+    content: "+";
+    font-size: 22px;
+    color: var(--color-shadowed);
 }
 
 .accordion__title {
-    letter-spacing: 0.5px;
+    font-size: calc(16px + (19  - 16)*(100vw - 320px)/(1200 - 320));
+    line-height: 1.2;
     color: var(--color-light);
-    padding: 20px 0;
+    padding: 12px 0;
 }
 
 .accordion__text {
-    font-size: 16px;
+    font-size: calc(16px + (19  - 16)*(100vw - 320px)/(1200 - 320));
     line-height: 24px;
     color: var(--color-shadowed);
 }
 
 .faq__img-side {
+    max-width: 570px;
+
+}
+
+@media screen and (min-width: 547px){
+    .faq__img-side {
+        flex-basis: 50%;
+    }
 }
 
 .faq__img {
