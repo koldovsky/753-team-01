@@ -17,11 +17,11 @@
 }
 
 .testimonials__title {
-    font-size: calc(30px + (45 - 30) * (100vw - 320px) / (1200 - 320));
+    font-size: 30px;
 }
 
 .testimonials__description {
-    font-size: calc(16px + (19 - 16) * (100vw - 320px) / (1200 - 320));
+    font-size: 18px;
 }
 
 .testimonials__slider {
@@ -44,7 +44,7 @@
 }
 
 .testimonials__name {
-    font-size: calc(30px + (45 - 30) * (100vw - 320px) / (1200 - 320));
+    font-size: 30px;
 }
 
 .testimonials__text {

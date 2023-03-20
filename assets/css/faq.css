@@ -37,7 +37,7 @@
 
 .faq__title {
     font-family: 'Playfair Display', serif;
-    font-size: calc(30px + (45 - 30) * (100vw - 320px) / (1200 - 320));
+    font-size: 30px;
     line-height: 1.2;
     color: var(--color-light);
     padding-bottom: 43px;
@@ -48,7 +48,7 @@
 }
 
 .faq__description {
-    font-size: calc(16px + (19 - 16) * (100vw - 320px) / (1200 - 320));
+    font-size: 18px;
     line-height: 1.5;
     color: var(--color-shadowed);
     padding-bottom: 25px;
@@ -77,14 +77,14 @@
 }
 
 .accordion__title {
-    font-size: calc(16px + (19 - 16) * (100vw - 320px) / (1200 - 320));
+    font-size: 18px;
     line-height: 1.2;
     color: var(--color-light);
     padding: 12px 0;
 }
 
 .accordion__text {
-    font-size: calc(16px + (19 - 16) * (100vw - 320px) / (1200 - 320));
+    font-size: 18px;
     line-height: 1.2;
     color: var(--color-shadowed);
 }
