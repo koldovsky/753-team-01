@@ -1,6 +1,7 @@
 .places {
     color: var(--color-fonts-places);
     margin-top: 60px;
+    margin-bottom: 60px;
     padding: 0;
     display: block;
     align-items: center;
