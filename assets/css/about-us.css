@@ -201,26 +201,23 @@
     flex-direction: column;
     align-items: center;
     background-color: var(--bgr-color-blog);
-    opacity: 0.7;
+    opacity: 1;
     padding: 10px 5px 40px;
     margin: 0 15px 0 30px;
 }
 
 .sale__title {
     font-size: 16px;
-    color: var(--color-light);
+    color: var(--color-bgr-form);
     font-family: var(--main-font);
 }
 
-.sale__text {
+#countdown-timer {
     font-size: 34px;
     font-weight: 700;
     padding-top: 10px;
-    background: var(--accent-color);
-    background-image: linear-gradient(to right, var(--gradient-color-light), var(--gradient-color-dark));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--accent-color);
+    text-shadow: 1px 1px 1px var(--color-bgr-form), 2px 2px 1px var(--color-bgr-form);
 }
 
 @media (min-width:770px) {
@@ -240,7 +237,7 @@
         margin: 0 210px 0 190px;
     }
     
-    .sale__text {
+    #countdown-timer {
         font-size: calc(34px + 2vw);
         line-height: calc(40px + 1vw);
     }
