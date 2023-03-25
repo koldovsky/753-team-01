@@ -216,11 +216,8 @@
     font-size: 34px;
     font-weight: 700;
     padding-top: 10px;
-    background: linear-gradient(
-        to right, 
-        var(--gradient-color-light), 
-        var(--gradient-color-dark)
-    );
+    background: var(--accent-color);
+    background-image: linear-gradient(to right, var(--gradient-color-light), var(--gradient-color-dark));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
