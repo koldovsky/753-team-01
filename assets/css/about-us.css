@@ -62,14 +62,14 @@
 }
 
 .about-us__statement {
-    color: var(--color-fonts-places);
+    color: var(--main-text-color);
     font-family: var(--block-title-font);
     font-weight: 700;
     padding: 0 15px;
 }
 
 .about-us__text {
-    color: var(--color-fonts-places);
+    color: var(--main-text-color);
     font-family: var(--main-font);
     font-size: 19px;
     font-weight: 400;
@@ -102,9 +102,7 @@
 }
 
 .about-us__cards {
-    padding: 100px 30px 40px;
-    margin-left: 20px;
-    margin-right: 20px;
+    padding: 100px 15px 40px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
@@ -112,6 +110,7 @@
     grid-column-gap: 0px;
     grid-row-gap: 30px;
     min-height: 400px;
+    margin-left: 15px;
   }
 
 @media (min-width:770px) {
@@ -126,6 +125,7 @@
         max-height: 800px;
         align-items: center;
         padding-left: 15px;
+        margin: 0 auto;
     }
 }
 
@@ -140,7 +140,12 @@
         max-width: 1200px;
         max-height: 800px;
         align-items: center;
-        margin-left: 150px;
+        margin: 0 auto;
+
+    }
+
+    .cards__text {
+        font-size: 15px;
     }
 }
 
@@ -153,11 +158,10 @@
     padding-top: 40px;
 }
 
-.cards_text {
-    color: var(--color-fonts-places);
+.cards__text {
+    color: var(--main-text-color);
     font-family: var(--main-font);
     font-weight: 400;
-    font-size: 14px;
     line-height: 22px;
 }
 
@@ -170,21 +174,21 @@
 
 .cards__contact-us {
     background-color: var(--color-light);
-    color: var(--color-fonts-places);
+    color: var(--main-text-color);
     padding: 10px 30px 30px;
     line-height: 24px;
 }
 
 .cards__pick-a-date {
     background-color: var(--color-light);
-    color: var(--color-fonts-places);
+    color: var(--main-text-color);
     padding: 10px 30px 30px;
     line-height: 24px;
 }
 
 .cards__start-your-journey {
     background-color: var(--color-light);
-    color: var(--color-fonts-places);
+    color: var(--main-text-color);
     padding: 10px 30px 30px;
     line-height: 24px;
 }
