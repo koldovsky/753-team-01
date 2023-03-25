@@ -219,6 +219,7 @@
     background: var(--accent-color);
     background-image: linear-gradient(to right, var(--gradient-color-light), var(--gradient-color-dark));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
