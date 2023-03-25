@@ -212,7 +212,7 @@
     font-family: var(--main-font);
 }
 
-#countdown-timer {
+.sale__text {
     font-size: 34px;
     font-weight: 700;
     padding-top: 10px;
@@ -240,7 +240,7 @@
         margin: 0 210px 0 190px;
     }
     
-    #countdown-timer {
+    .sale__text {
         font-size: calc(34px + 2vw);
         line-height: calc(40px + 1vw);
     }
