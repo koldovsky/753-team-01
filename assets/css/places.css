@@ -20,7 +20,6 @@
 }
 
 .places__menu {
-    margin-top: px;
     display: flex;
     flex-direction: column;
     font-size: 14px;
