@@ -1,6 +1,8 @@
 :root {
     font-family: 'Roboto', sans-serif;
     --accent-color: #d71212;
+    --gradient-color-light: #C1E3FF;
+    --gradient-color-dark: #5a89e8;
     --button-color: #14A9EE;
     --border-color-input: #f7f7f7;
     --bgr-color-input: #252424;
@@ -10,6 +12,7 @@
     --color-dark-main-bg: #232428;
     --color-dark-input: #252424;
     --block-title-color: #6F7380;
+    --main-text-color: #505155;
     --color-shadowed: rgba(255, 255, 255, 0.3);
     --color-shadowed-header: rgba(255, 255, 255, 0.75);
     --color-text-header:  rgb(255, 255, 255);
@@ -18,8 +21,6 @@
     --block-title-font: 'Playfair', serif;
     --bgr-color-blog: rgb(19, 18, 18, 0.5);
     --border-color-blog: rgb(241, 237, 237);
-    --font-adaptive-subtext: calc(16px + (19  - 16)*(100vw - 320px)/(1200 - 320));
-    --font-adaptive-title: calc(30px + (45 - 30)*(100vw - 320px)/(1200 - 320));
 
     scroll-behavior: smooth;
 }
