@@ -1,7 +1,14 @@
 const cityNames = ["oslo", "trondheim", "bodo", "lofoten", "tromso"];
 
-function showCity(city) {
+function handleCityButtonClick(event) {
+  // Stop automatic scrolling
+  event.preventDefault();
+  // Call the function -showCity  for the city using the link
+  const cityIndex = parseInt(event.target.dataset.city, 10);
+  showCity(cityIndex);
+}
 
+function showCity(city) {
   let cityContainers = document.querySelectorAll(".places__city_container");
   let cityButtons = document.querySelectorAll(".places__btn-city");
 
@@ -14,17 +21,18 @@ function showCity(city) {
   cityButtons.forEach(function (cityButton) {
     if (cityButton !== null) {
       cityButton.classList.remove("active");
+cityButton.addEventListener("click", handleCityButtonClick);
     }
   });
 
   let activeCityContainer = document.getElementById(cityNames[city - 1]);
   let activeCityButton = document.querySelector(`[data-city="${city}"]`);
-  //перевірити змінну city
+  //check  variable - city
   if (city < 1 || city > cityNames.length) {
     console.error(`Invalid city index: ${city}`);
     return;
   }
-//
+
   if (activeCityContainer !== null) {
     activeCityContainer.style.display = "grid";
     activeCityContainer.style.gridAutoColumns;
@@ -35,7 +43,7 @@ function showCity(city) {
   }
 }
 
-// Приховати всі міста
+// Hide all cities
 let cityContainers = document.querySelectorAll(".places__city_container");
 cityContainers.forEach(function (cityContainer) {
   if (cityContainer !== null) {
@@ -43,12 +51,5 @@ cityContainers.forEach(function (cityContainer) {
   }
 });
 
-// Показати перше місто за замовчуванням
-let firstCityButton = document.querySelector(
-  '.places__btn-city[data-city="1"]'
-);
-if (firstCityButton !== null) {
-  firstCityButton.click();  
-}
-
-console.log("JavaScript файл підключено");
+// Show the first city by default
+showCity(1);
