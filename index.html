@@ -163,14 +163,14 @@
             </p>
             <div class="places__menu-container">
                 <div class="places__menu">
-                    <a class="places__btn-city active-btn" href="#oslo">Oslo</a>
-                    <a class="places__btn-city" href="#trondheim">Trondheim</a>
-                    <a class="places__btn-city" href="#bodo">Bodø</a>
-                    <a class="places__btn-city" href="#lofoten">Lofoten Islands</a>
-                    <a class="places__btn-city" href="#tromso">Tromsø</a>
+                    <a data-city="1" onclick="showCity(1)" class="places__btn-city active" href="#oslo">Oslo</a>
+                    <a data-city="2" onclick="showCity(2)" class="places__btn-city" href="#trondheim">Trondheim</a>
+                    <a data-city="3" onclick="showCity(3)" class="places__btn-city" href="#bodo">Bodø</a>
+                    <a data-city="4" onclick="showCity(4)" class="places__btn-city" href="#lofoten">Lofoten Islands</a>
+                    <a data-city="5" onclick="showCity(5)" class="places__btn-city" href="#tromso">Tromsø</a>
                 </div>
             </div>
-            <div id="oslo" class="places__city_container">
+            <div id="oslo" class="places__city_container hidden  active">
                 <div class="places__photo">
                     <img src="assets/images/plases-section/in-oslo.png" alt="Oslo">
                 </div>
@@ -186,7 +186,7 @@
                         tour, you will see the opera house, parliament, the
                         royal palace, and more.
                     </p>
-
+        
                     <div class="service">
                         <img class="service__icon" src="assets/images/plases-section/in-spoonfok.svg" alt="spoon">
                         <p>- Dinner included</p>
@@ -194,13 +194,12 @@
                     <p class="service"><img class="service__icon" src="assets/images/plases-section/in-backpack.svg"
                             alt="backpack">
                         - Leave your backpack in the hotel</p>
-                    <p class="service"><img class="service__icon" src="assets/images/plases-section/in-plane.svg"
-                            alt="plane"> -
+                    <p class="service"><img class="service__icon" src="assets/images/plases-section/in-plane.svg" alt="plane"> -
                         Transfer from the airport</p>
                     <button form="booking" class="btn_book">Book now →</button>
                 </div>
             </div>
-            <div id="trondheim" class="places__city_container">
+            <div id="trondheim" class="places__city_container hidden">
                 <div class="places__photo">
                     <img src="assets/images/plases-section/in-trondheim.png" alt="Trondheim">
                 </div>
@@ -217,10 +216,10 @@
                         sign
                         of the new era is a
                         high TV tower with a revolving restaurant.</p>
-                    <p class="service"><img class="service__icon" src="assets/images/plases-section/in-bus.svg"
-                            alt="bus"> - Arriving at 9 a.m.</p>
-                    <p class="service"><img class="service__icon" src="assets/images/plases-section/in-camera.svg"
-                            alt="camera"> -
+                    <p class="service"><img class="service__icon" src="assets/images/plases-section/in-bus.svg" alt="bus"> -
+                        Arriving at 9 a.m.</p>
+                    <p class="service"><img class="service__icon" src="assets/images/plases-section/in-camera.svg" alt="camera">
+                        -
                         Instagram-friendly places</p>
                     <p class="service"><img class="service__icon" src="assets/images/plases-section/in-road-sign.svg"
                             alt="road-sign"> - 3-hours
@@ -228,7 +227,7 @@
                     <button form="booking" class="btn_book">Book now →</button>
                 </div>
             </div>
-            <div id="bodo" class="places__city_container">
+            <div id="bodo" class="places__city_container hidden">
                 <div class="places__photo">
                     <img src="assets/images/plases-section/in-bodo.png" alt="Bodø">
                 </div>
@@ -243,8 +242,8 @@
                         sightseeing. We will simply go
                         fishing, enjoy the fresh
                         air, and try dishes with salmon and trout.</p>
-                    <p class="service"><img class="service__icon" src="assets/images/plases-section/in-fishspot.svg"
-                            alt="bus"> - Fishing spots</p>
+                    <p class="service"><img class="service__icon" src="assets/images/plases-section/in-fishspot.svg" alt="bus">
+                        - Fishing spots</p>
                     <p class="service"><img class="service__icon" src="assets/images/plases-section/in-spoonfok.svg"
                             alt="camera"> - Fish dinner
                     </p>
@@ -254,7 +253,7 @@
                     <button form="booking" class="btn_book">Book now →</button>
                 </div>
             </div>
-            <div id="lofoten" class="places__city_container">
+            <div id="lofoten" class="places__city_container hidden">
                 <div class="places__photo">
                     <img src="assets/images/plases-section/in-lofoten.png" alt="Lofoten Islands">
                 </div>
@@ -271,17 +270,17 @@
                         nature,
                         majestic mountains,
                         fjords, and long sandy beaches.</p>
-                    <p class="service"><img class="service__icon" src="assets/images/plases-section/in-beach.svg"
-                            alt="beaches"> - beaches</p>
-                    <p class="service"><img class="service__icon" src="assets/images/plases-section/in-liquor.svg"
-                            alt="liquor"> - Tasting of local
+                    <p class="service"><img class="service__icon" src="assets/images/plases-section/in-beach.svg" alt="beaches">
+                        - beaches</p>
+                    <p class="service"><img class="service__icon" src="assets/images/plases-section/in-liquor.svg" alt="liquor">
+                        - Tasting of local
                         liqueurs</p>
                     <p class="service"><img class="service__icon" src="assets/images/plases-section/in-boat.svg"
                             alt="road-sign"> - Boat trip</p>
                     <button form="booking" class="btn_book">Book now →</button>
                 </div>
             </div>
-            <div id="tromso" class="places__city_container">
+            <div id="tromso" class="places__city_container hidden">
                 <div class="places__photo">
                     <img src="assets/images/plases-section/in-tromso.png" alt="Tromsø">
                 </div>
@@ -297,20 +296,20 @@
                         of the North”. The main
                         attractions are the Polar
                         Museum and the Arctic Cathedral.</p>
-                    <p class="service"><img class="service__icon"
-                            src="assets/images/plases-section/in-suitcase-suvenir.svg" alt="suitcase"> - Free
+                    <p class="service"><img class="service__icon" src="assets/images/plases-section/in-suitcase-suvenir.svg"
+                            alt="suitcase"> - Free
                         souvenirs</p>
-                    <p class="service"><img class="service__icon" src="assets/images/plases-section/in-plane.svg"
-                            alt="liquor"> - International
+                    <p class="service"><img class="service__icon" src="assets/images/plases-section/in-plane.svg" alt="liquor">
+                        - International
                         airport</p>
-                    <p class="service"><img class="service__icon"
-                            src="assets/images/plases-section/in-northern-lights.svg" alt="road-sign"> -
+                    <p class="service"><img class="service__icon" src="assets/images/plases-section/in-northern-lights.svg"
+                            alt="road-sign"> -
                         Northern Lights</p>
                     <button form="booking" class="btn_book">Book now →</button>
                 </div>
             </div>
         </section>
-
+        
         <!--Binkovskyi Yevhen, 6th block-->
         <section class="gallery">
             <div class="container">

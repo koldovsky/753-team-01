@@ -37,7 +37,9 @@
     display: flex;
     flex-direction: column;
 }
-
+.hidden {
+    display: none;
+}
 .places__btn-city {
     background-color: var(--color-light);
     color: var(--color-fonts-places);
