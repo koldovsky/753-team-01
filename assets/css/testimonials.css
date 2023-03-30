@@ -1,5 +1,6 @@
 .testimonials {
     color: var(--block-title-color);
+
 }
 
 .testimonials__container {
@@ -14,44 +15,121 @@
 }
 
 .testimonials__sign {
+    font-size: 13px;
+    line-height: 1.6;
+    letter-spacing: 0.39px;
+    padding: 120px 0 20px 0;
 }
 
 .testimonials__title {
-    font-size: 30px;
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 1.2;
+    letter-spacing: 1.35px;
+    padding-bottom: 25px;
+    color: var(--main-text-color);
 }
 
 .testimonials__description {
-    font-size: 18px;
+    font-size: 19px;
+    line-height: 1.7;
+    padding-bottom: 50px;
 }
 
 .testimonials__slider {
 }
 
 .slider {
+    position: relative;
+    margin: 0 auto;
+    width: 800px;
+    min-height: 700px;
 }
 
 .slide {
+    top: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 33px;
 }
 
 .testimonials__author {
-
+    padding-bottom: 35px;
 }
 
 .testimonials__photo {
+    padding-bottom: 20px;
+}
+
+.testimonials__photo img {
+    width: 120px;
+    height: 120px;
 }
 
 .testimonials__name {
-    font-size: 30px;
+    font-size: 24px;
+    line-height: 1.4;
+    font-weight: 500;
+    color: var(--color-dark-main-bg);
 }
 
 .testimonials__text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .testimonial__review {
+    font-size: 17px;
+    line-height: 1.7;
+    letter-spacing: 0.51px;
+    padding-bottom: 38px;
 }
 
 .testimonials__date {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--main-text-color);
+}
+
+.slider__btn {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.slider__btn_left {
+    left: -6%;
+    transform: translate(-50%, -50%);
+}
+
+.slider__btn_right{
+    right: -6%;
+    transform: translate(50%, -50%);
+}
+
+.dots{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.dots__item {
+    border: none;
+    background-color: #b9b9b9;
+    opacity: 0.7;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.dots__item_active {
+    background: #232428;
 }
