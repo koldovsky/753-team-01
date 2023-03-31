@@ -1,3 +1,5 @@
+(function () {
+  
 const cityNames = ["oslo", "trondheim", "bodo", "lofoten", "tromso"];
 
 function handleCityButtonClick(event) {
@@ -21,7 +23,7 @@ function showCity(city) {
   cityButtons.forEach(function (cityButton) {
     if (cityButton !== null) {
       cityButton.classList.remove("active");
-cityButton.addEventListener("click", handleCityButtonClick);
+      cityButton.addEventListener("click", handleCityButtonClick);
     }
   });
 
@@ -53,3 +55,4 @@ cityContainers.forEach(function (cityContainer) {
 
 // Show the first city by default
 showCity(1);
+})()
