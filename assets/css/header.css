@@ -1,11 +1,37 @@
 .header {
     background-image: url(../images/first-section/norway-bg.png);
     background-repeat: no-repeat;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;   
+    background-size: cover;
+    min-width: 320px;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 20px 40px;
 }
 
 .header__logo {
     font-size: 1rem;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    
+}
+
+.nav__link {
+    margin-left: 40px;
+    text-decoration: none;
+    color: var(--color-text-header);
+    font-weight: 600;
 }
 
 .header__title, 
@@ -14,19 +40,23 @@
 {
     font-size: 0.75rem;
     color: var(--color-text-header);
+    font-weight: 700;
 }
 
 .header__text-trip {
     font-size: 1.0625rem;
     color: var(--color-text-header);
+    font-weight: 700;
 }
 .header__text-days {
     font-size: 0.75rem;
     color: var(--color-shadowed-header);
+    font-weight: 500;
 }
 
 .header__topic {
-    font-size: 4.375rem;
+    font-size: 180px;
+    font-family: 'Playfair Display', serif;
     color: var(--color-text-header);
 }
 
@@ -39,4 +69,5 @@
     font-size: 0.875rem;
     padding-right: 32px;
     color: var(--color-text-header);
+    font-weight: 700;
 }
