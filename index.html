@@ -16,12 +16,12 @@
         <div class="header__container">
             <img class="header__logo" src="assets/images/first-section/norway-logo.png" alt="Norway logo">
             <nav class="header__nav nav">
-                <a href="#" class="nav__link">Itinerary</a> <!--#places-->
-                <a href="#" class="nav__link">About Us</a> <!--#about-->
-                <a href="#" class="nav__link">Testimonials</a> <!--#testimonials-->
-                <a href="#" class="nav__link">Blog</a> <!--#blog-->
-                <a href="#" class="nav__link">Contacts</a> <!--#contacts-->
-                <a href="#" class="nav__link">Join Us</a> <!--#contact-form-->
+                <a href="#about-us" class="nav__link">About Us</a> <!--#about-->
+                <a href="#itinerary" class="nav__link">Itinerary</a> <!--#places-->
+                <a href="#testimonials" class="nav__link">Testimonials</a> <!--#testimonials-->
+                <a href="#blog" class="nav__link">Blog</a> <!--#blog-->
+                <a href="#contacts" class="nav__link">Contacts</a> <!--#contacts-->
+                <a href="#contact-book" class="nav__link">Join Us</a> <!--#contact-form-->
             </nav>
         </div>
         <p class="header__title"><span class="space-marker">━</span> YOUR PERFECT JOURNEY TO</p>
@@ -38,7 +38,7 @@
     <main class="main">
 
         <!-- Iryna Aksonova, 2nd block -->
-        <section class="about-us">
+        <section class="about-us" id="about-us">
             <div class="about-us__description">
                 <div class="about-us__statement">
                     <h2 class="about-us__title"><span class="dash">━ </span> About Us</h2>
@@ -425,7 +425,7 @@
         </section>
 
         <!-- Inga Borysova block US CONTACTS-->
-        <section class="contact-book">
+        <section class="contact-book" id="contact-book">
             <div class="forma_container">
                 <form id="booking" class="contact-book__forma">
                     <h2 class="section-title">
@@ -456,7 +456,7 @@
 
 
         <!--Oleg Kharyton, 9th block-->
-        <section class="testimonials">
+        <section class="testimonials" id="testimonials">
             <div class="testimonials__container">
                 <div class="testimonials__content">
                     <h3 class="testimonials__sign">TESTIMONIALS</h3>
@@ -464,6 +464,7 @@
                     <p class="testimonials__description">Norway leaves no one indifferent. Its stunning nature, friendly
                         people, beautiful cities, and delicious cuisine will be remembered forever.</p>
                     <div class="testimonials__slider slider">
+                        <div class="slider__content">
                         <div class="slide">
                             <div class="testimonials__author">
                                 <img src="assets/images/testimonials-section/author-photo.png" alt="Cole Tiers photo"
@@ -471,13 +472,13 @@
                                 <h4 class="testimonials__name">Cole Tiers</h4>
                             </div>
                             <div class="testimonials__text">
-                                <p class="testimonial__review">I wanted to see Norway since childhood when I saw a
+                                <div class="testimonial__review">I wanted to see Norway since childhood when I saw a
                                     stylish
                                     house right in the middle of the Norwegian forest in some magazine. I thought then
                                     that
                                     I also want to live in such a house. This dream came true a few months ago on a tour
                                     of
-                                    Norway. I am very happy! Thanks, guys!</p>
+                                    Norway. I am very happy! Thanks, guys!</div>
                                 <time datetime="2021-10-28" class="testimonials__date">October 28, 2021</time>
                             </div>
                         </div>
@@ -488,13 +489,13 @@
                                 <h4 class="testimonials__name">Cole Tiers</h4>
                             </div>
                             <div class="testimonials__text">
-                                <p class="testimonial__review">I wanted to see Norway since childhood when I saw a
+                                <div class="testimonial__review">I wanted to see Norway since childhood when I saw a
                                     stylish
                                     house right in the middle of the Norwegian forest in some magazine. I thought then
                                     that
                                     I also want to live in such a house. This dream came true a few months ago on a tour
                                     of
-                                    Norway. I am very happy! Thanks, guys!</p>
+                                    Norway. I am very happy! Thanks, guys!</div>
                                 <time datetime="2021-10-28" class="testimonials__date">October 28, 2021</time>
                             </div>
                         </div>
@@ -505,22 +506,27 @@
                                 <h4 class="testimonials__name">Cole Tiers</h4>
                             </div>
                             <div class="testimonials__text">
-                                <p class="testimonial__review">I wanted to see Norway since childhood when I saw a
+                                <div class="testimonial__review">I wanted to see Norway since childhood when I saw a
                                     stylish
                                     house right in the middle of the Norwegian forest in some magazine. I thought then
                                     that
                                     I also want to live in such a house. This dream came true a few months ago on a tour
                                     of
-                                    Norway. I am very happy! Thanks, guys!</p>
+                                    Norway. I am very happy! Thanks, guys!</div>
                                 <time datetime="2021-10-28" class="testimonials__date">October 28, 2021</time>
                             </div>
                         </div>
+                        <button class="slider__btn slider__btn_left">&larr;</button>
+                        <button class="slider__btn slider__btn_right">&rarr;</button>
+                            <div class="dots"></div>
                     </div>
+                    </div>
+
                 </div>
             </div>
         </section>
 
-        <section class="blog">
+        <section class="blog" id="blog">
             <div class="blog__header">
                 <h2 class="section-title">
                     <span class="space-marker">━</span>
@@ -536,7 +542,7 @@
             </div>
         </section>
 
-        <div class="contacts">
+        <div class="contacts" id="contacts">
             <div class="contact__contact-us">
                 <img class="contact__contact_img" src="./assets/images/blog/post.png" alt="email">
                 <p class="contact__contact_text">Write Us</p>
@@ -562,6 +568,7 @@
     </footer>
     <script src="js/countdown-sale.js"></script>
     <script src="js/plases.js"></script>
+    <script src="js/testimonials-slider.js"></script>
 </body>
 
 </html>
