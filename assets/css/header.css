@@ -4,10 +4,9 @@
     font-family: 'Roboto', sans-serif;   
     background-size: cover;
     min-width: 320px;
-    top: 0;
-    left: 0;
-    right: 0;
     padding: 20px 40px;
+    max-width: 100%;
+    height: auto;
 }
 
 .header__logo {
@@ -70,4 +69,10 @@
     padding-right: 32px;
     color: var(--color-text-header);
     font-weight: 700;
+}
+
+.header__promo-video {
+    display: flex;
+    box-sizing: border-box;
+    max-width: 33%;
 }
