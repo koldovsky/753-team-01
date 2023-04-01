@@ -1,7 +1,7 @@
 (function () {
   function sendData() {
     const url =
-      "https://script.google.com/macros/s/AKfycbxiFJZa-c4tQX2CGonPi-k_0UrXzT4L1ABYCo-M1YuGi7jaOO0wwnXmP0kvn5Lbj06y/exec";
+      "https://script.google.com/macros/s/AKfycbz_R_teVCn78nLzeSsUPw2QfElPyzD4DxQiA_fIzocO0Dq90Dzj671BIbEakXhT2vw6/exec";
     const formData = new FormData(document.getElementById("booking"));
     formData.append("authToken", "abcdefghijklmnopqrstuvwxyz1234567890");
     fetch(url, { method: "POST", body: formData })
