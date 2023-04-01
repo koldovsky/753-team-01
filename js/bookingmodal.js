@@ -1,52 +1,36 @@
 (function () {
-  function sendData() {
-    const url =
-      "https://script.google.com/macros/s/https://script.google.com/macros/s/AKfycbzfE8540PuuJhUNmtZ9RzIEoxiZlEobyXTInGGuLy0VqAQ57stIiPQiVVzrKh4QVfc9/exec/exec";
-    const formData = new FormData(document.getElementById("booking"));
-    formData.append("authToken", "abcdefghijklmnopqrstuvwxyz1234567890");
-    fetch(url, { method: "POST", body: formData })
-      .then(function (response) {
-        if (!response.ok) {
-          throw new Error("Network response was not ok.");
+  const form = document.querySelector(".contact-book__forma");
+
+  const showError = () => {
+    alert("Oops, something went wrong. Please try again later.");
+  };
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    const { value: name } = document.querySelector(".input-name");
+    const { value: tel } = document.querySelector(".input-tel");
+    const { value: email } = document.querySelector(".input-email");
+    const { value: date } = document.querySelector(".input-date");
+
+    fetch("https://www.jsonkeeper.com/b/IEPV", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ name, tel, email, date }),
+    })
+      .then((response) => {
+        if (response.ok) {
+          alert("Your request has been sent!");
+          form.reset();
+        } else {
+          showError();
         }
-        return response.text();
       })
-      .then(function (text) {
-        console.log(text);
-        showModal();
-      })
-      .catch(function (error) {
-        console.error("There was a problem with the fetch operation:", error);
+      .catch((error) => {
+        console.error("Error:", error);
+        showError();
       });
-  }
-
-  function showModal() {
-    const modal = document.querySelector(".modal");
-    modal.style.display = "block";
-  }
-
-  document
-    .getElementById("launch-btn")
-    .addEventListener("click", function (event) {
-      event.preventDefault();
-      sendData();
-    });
-
-  document.querySelector(".btn_ok").addEventListener("click", function () {
-    const modal = document.querySelector(".modal");
-    modal.style.display = "none";
-  });
-
-  document
-    .getElementById("launch-btn")
-    .addEventListener("click", function (event) {
-      event.preventDefault();
-      sendData();
-    });
-
-  const modal = document.querySelector(".modal");
-
-  document.querySelector(".btn_ok").addEventListener("click", function () {
-    modal.style.display = "none";
   });
 })();
