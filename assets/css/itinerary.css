@@ -1,0 +1,63 @@
+.itinerary {
+    background-color: var(--bgr-itinerary);
+    color: var(--color-light);
+    padding-right: 100px;
+}
+
+.route {
+    width: 50%;
+}
+
+.itinerary__description-container .section-title {
+    font-weight: bold;
+    margin-top: 30px;
+    color: var(--color-text-itinerary);
+}
+
+.itinerary__from-to {
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.to-trosmo {
+    color: var(--color-text-itinerary);
+}
+
+.itinerary__decsription {
+    font-size: 12px;
+    color: var(--color-text-itinerary);
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.list__size {
+    width: 50px;
+    margin-right: 20px;
+}
+
+.itinerary__list {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.itinerary__list_list {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.list {
+    font-size: 14px;
+    color: var(--color-text-itinerary);
+}
+
+@media (min-width: 900px) {
+    .itinerary {
+        display: flex;
+        flex-direction: row;
+    }
+}

@@ -24,6 +24,8 @@
     --border-color-blog: rgb(241, 237, 237);
     --dots-color: rgba(35, 36, 40, 0.25);
     --active-dot-color: rgba(35, 36, 40, 0.75);
+    --color-text-itinerary: #726d6d;
+    --bgr-itinerary: #232428;
 
     scroll-behavior: smooth;
 }
