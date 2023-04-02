@@ -1,6 +1,7 @@
 .itinerary {
     background-color: var(--bgr-itinerary);
     color: var(--color-light);
+    width: 100%;
     padding-right: 100px;
 }
 
