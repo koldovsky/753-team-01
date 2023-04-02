@@ -1,6 +1,7 @@
 .itinerary {
     background-color: var(--bgr-itinerary);
     color: var(--color-light);
+    max-width: 100%;
     
 }
 
