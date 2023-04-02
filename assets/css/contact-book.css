@@ -11,7 +11,6 @@
     padding-bottom: 90px;
 }
 
-
 .contact-book.modal-open {
     filter: contrast(0.7) saturate(0.7);
 }
@@ -79,7 +78,6 @@
     color: var(--color-light);
 }
 
-/* modal window */
 .contact-book {
     height: 100%;
     display: flex;
@@ -148,9 +146,6 @@
     color: var(--color-light);
 }
 
-
-
-/* modal window */
 .modal {
     background-color: var(--color-bgr-form);
     position: fixed;
@@ -185,7 +180,6 @@
 .modal__answer {
     margin: 20px;
 }
-
 
 .modal__thank {
     font-size: 20px;
