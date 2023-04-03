@@ -136,9 +136,11 @@
     background: var(--bgr-color-input);
     color: var(--text-color-input);
 }
+
 .input-date {
     font-size: 20px;
 }
+
 .contact-book__input:focus {
     box-shadow: 0 0 2px 2px var(--border-color-input);
 }
@@ -147,7 +149,8 @@
     filter: invert(1);
     color: var(--text-color-input);
     font-size: 30px;
-  }
+}
+
 .btn_book_send {
     margin-top: 24px;
     height: 40px;
@@ -169,14 +172,15 @@
     align-items: center;
     text-align: center;
     color: var(--color-light);
-    padding-bottom: 3%;
+    font-size: 16px;
+    padding-top: 3%;
 }
 
 .close-btn {
     position: absolute;
     right: 5%;
     top: 5%;
-    font-size: 14px;
+    font-size: 16px;
     color: var(--color-light);
     background: none;
 }
@@ -185,7 +189,6 @@
     width: 10%;
     display: block;
     margin: 0 auto;
-
 }
 
 .modal__answer {
@@ -225,20 +228,14 @@
     }
 
     .modal {
-        position: fixed;
-        transform: translate(-50%, -50%);
+        position: absolute;
         width: 30%;
-        height: 30%;
-        display: none;
-        align-items: center;
-        text-align: center;
-        color: var(--color-light);
-        padding-bottom: 3%;
+        height: 35%;
     }
-    
+
     .btn_ok {
         margin-top: 30px;
-        height: 35px;
+        height: 45px;
     }
 
     .contact-book__input {
@@ -247,5 +244,18 @@
 
     .btn_book_send {
         height: 50px;
+    }
+
+    .modal__answer {
+        font-size: 20px;
+        line-height: 1.5;
+    }
+
+    .modal__thank {
+        font-size: 30px;
+    }
+
+    .modal__descr {
+        font-size: 25px;
     }
 }
