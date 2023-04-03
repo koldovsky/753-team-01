@@ -68,6 +68,7 @@
 .contact-book__input:focus {
     box-shadow: 0 0 2px 2px var(--border-color-input);
 }
+
 .input-date {
     font-size: 14px;
 }
@@ -135,11 +136,18 @@
     background: var(--bgr-color-input);
     color: var(--text-color-input);
 }
-
+.input-date {
+    font-size: 20px;
+}
 .contact-book__input:focus {
     box-shadow: 0 0 2px 2px var(--border-color-input);
 }
 
+.contact-book__input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    color: var(--text-color-input);
+    font-size: 30px;
+  }
 .btn_book_send {
     margin-top: 24px;
     height: 40px;
@@ -216,12 +224,28 @@
         margin-left: 10%;
     }
 
+    .modal {
+        position: fixed;
+        transform: translate(-50%, -50%);
+        width: 30%;
+        height: 30%;
+        display: none;
+        align-items: center;
+        text-align: center;
+        color: var(--color-light);
+        padding-bottom: 3%;
+    }
+    
     .btn_ok {
         margin-top: 30px;
         height: 35px;
     }
 
     .contact-book__input {
+        height: 50px;
+    }
+
+    .btn_book_send {
         height: 50px;
     }
 }

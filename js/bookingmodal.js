@@ -33,7 +33,7 @@
     const { value: email } = document.querySelector(".input-email");
     const { value: date } = document.querySelector(".input-date");
 
-    fetch("https://formspree.io/f/mjvdrzzq", {
+    fetch("https://formspree.io/f/mwkjraqv", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
