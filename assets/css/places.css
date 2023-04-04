@@ -139,7 +139,7 @@
     .places__city_container {
         display: grid;
         grid-template-columns: 50% 50%;
-        padding-top: 5%;
+        padding-top: 2%;
     }
 
     .places__menu {
