@@ -1,6 +1,7 @@
 :root {
     font-family: 'Roboto', sans-serif;
     --accent-color: #d71212;
+    --accent-color-light: #f6b0b0;
     --gradient-color-light: #C1E3FF;
     --gradient-color-dark: #5a89e8;
     --button-color: #14A9EE;

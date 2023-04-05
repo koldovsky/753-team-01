@@ -17,6 +17,7 @@
 .places__ten_days {
     margin-top: 40px;
     font-size: 20px;
+    line-height: 1.5;
 }
 
 .places__menu {
@@ -47,10 +48,12 @@
     border: none;
     font-size: 20px;
 }
-
+.places__btn-city:hover {
+    border-bottom: 2px solid var(--accent-color-light);
+}
 .places__btn-city.active {
     font-weight: 800;
-    border-bottom: 2px solid var(--accent-color);
+    border-bottom: 4px solid var(--accent-color);
 }
 
 .places__photo {
