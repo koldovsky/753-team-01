@@ -61,23 +61,27 @@
     font-size: 0.75rem;
     color: var(--color-text-header);
     font-weight: 700;
+    margin-top: 20px;
 }
 
 .header__text-trip {
     font-size: 1.0625rem;
     color: var(--color-text-header);
     font-weight: 700;
+    margin-top: 20px;
 }
 .header__text-days {
     font-size: 0.75rem;
     color: var(--color-shadowed-header);
     font-weight: 500;
+    margin-top: 20px;
 }
 
 .header__topic {
     font-size: 180px;
     font-family: 'Playfair Display', serif;
     color: var(--color-text-header);
+    padding-bottom: 20px;
 }
 
 .header__text {
@@ -87,9 +91,9 @@
 
 .header__read-more {
     font-size: 0.875rem;
-    padding-right: 32px;
     color: var(--color-text-header);
     font-weight: 700;
+    margin-top: 20px;
 }
 
 .header__promo-video {
@@ -103,4 +107,5 @@
     flex-basis: 33%;
     max-width: 33%;
     text-align: left;
+    margin-top: 20px;
 }
